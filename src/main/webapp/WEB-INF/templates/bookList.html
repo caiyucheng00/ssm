@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>书籍列表</title>
+</head>
+<body>
+<table border="1" cellpadding="0" cellspacing="0" style="text-align: center">
+    <tr>
+        <th colspan="3">Book Info</th>
+    </tr>
+    <tr>
+        <th>book_id</th>
+        <th>book_name</th>
+        <th>book_count</th>
+    </tr>
+    <tr th:each="book:${bookList}">
+        <td th:text="${book.bookId}"></td>
+        <td th:text="${book.bookName}"></td>
+        <td th:text="${book.bookCount}"></td>
+    </tr>
+</table>
+<a th:href="@{/book/appoint}">添加预定</a>
+</body>
+</html>

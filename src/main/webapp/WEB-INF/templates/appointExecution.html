@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>添加预约信息</title>
+</head>
+<body>
+<form th:action="@{/book/list}" method="post">
+    student_id:<input type="text" name="studentId"/><br/>
+    book_id:<input type="text" name="bookId"/>
+    <input type="submit" value="submit"/>
+</form>
+</body>
+</html>
