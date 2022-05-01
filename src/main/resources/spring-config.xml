@@ -18,10 +18,10 @@
 <!--    <context:property-placeholder location="jdbc.properties"/>-->
     <!--配置连接池-->
     <bean id="datasource" class="com.alibaba.druid.pool.DruidDataSource">
-        <property name="url" value="jdbc:mysql://localhost:3306/ssm?serverTimezone=UTC&amp;characterEncoding=utf8&amp;useUnicode=true&amp;useSSL=false&amp;rewriteBatchedStatements=true"/>
-        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
-        <property name="username" value="root"/>
-        <property name="password" value="root"/>
+        <property name="url" value=""/>
+        <property name="driverClassName" value=""/>
+        <property name="username" value=""/>
+        <property name="password" value=""/>
     </bean>
     <!--配置sqlSessionFactory-->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
