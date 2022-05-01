@@ -22,15 +22,10 @@ public class ServiceTest {
     @Autowired
     private BookService bookService;
 
-    @Autowired
-    private AppointmentMapper appointmentMapper;
-
     @Test
     public void test(){
-        AppointExecution appointExecution = bookService.appoint(2, 11118403L);
+        AppointExecution appointExecution = bookService.appoint(5, 11118403L);
         System.out.println(appointExecution);
 
-        List<Appointment> appointmentList = appointmentMapper.selectByExample(null);
-        System.out.println(appointmentList);
     }
 }

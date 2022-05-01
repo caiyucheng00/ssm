@@ -24,10 +24,6 @@ public class BookController {
     @Autowired
     private BookService bookService;
 
-    @RequestMapping(value = "/")
-    private String index(){
-        return "index";
-    }
 
     @RequestMapping(value = "/list",method = RequestMethod.GET)
     private String list(Model model){
